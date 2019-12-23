@@ -13,16 +13,17 @@ namespace Tests
         [TestCase("babad", ExpectedResult = "bab")]
         [TestCase("cbbd", ExpectedResult = "bb")]
         [TestCase("madam", ExpectedResult = "madam")]
+        [TestCase("anugnxshgonmqydttcvmtsoaprxnhpmpovdolbidqiyqubirkvhwppcdyeouvgedccipsvnobrccbndzjdbgxkzdbcjsjjovnhpnbkurxqfupiprpbiwqdnwaqvjbqoaqzkqgdxkfczdkznqxvupdmnyiidqpnbvgjraszbvvztpapxmomnghfaywkzlrupvjpcvascgvstqmvuveiiixjmdofdwyvhgkydrnfuojhzulhobyhtsxmcovwmamjwljioevhafdlpjpmqstguqhrhvsdvinphejfbdvrvabthpyyphyqharjvzriosrdnwmaxtgriivdqlmugtagvsoylqfwhjpmjxcysfujdvcqovxabjdbvyvembfpahvyoybdhweikcgnzrdqlzusgoobysfmlzifwjzlazuepimhbgkrfimmemhayxeqxynewcnynmgyjcwrpqnayvxoebgyjusppfpsfeonfwnbsdonucaipoafavmlrrlplnnbsaghbawooabsjndqnvruuwvllpvvhuepmqtprgktnwxmflmmbifbbsfthbeafseqrgwnwjxkkcqgbucwusjdipxuekanzwimuizqynaxrvicyzjhulqjshtsqswehnozehmbsdmacciflcgsrlyhjukpvosptmsjfteoimtewkrivdllqiotvtrubgkfcacvgqzxjmhmmqlikrtfrurltgtcreafcgisjpvasiwmhcofqkcteudgjoqqmtucnwcocsoiqtfuoazxdayricnmwcg", ExpectedResult = "hpyyph")]        
         public string FindLongestTest(string word)
         {
             var sut = new Palindrome();
 
-            return sut.FindLongest(word);
+            return sut.LongestPalindrome(word);
         }
 
         [TestCase(null, ExpectedResult = false)]
         [TestCase("", ExpectedResult = false)]
-        [TestCase("c", ExpectedResult = false)]
+        [TestCase("a", ExpectedResult = true)]
         [TestCase("babad", ExpectedResult = false)]
         [TestCase("cbbd", ExpectedResult = false)]
         [TestCase("madam", ExpectedResult = true)]

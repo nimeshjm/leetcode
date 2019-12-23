@@ -4,10 +4,14 @@ namespace LongestPalindromicSubstring.Domain
 {
     public class Palindrome
     {
-        public string FindLongest(string word)
+        public string LongestPalindrome(string word)
         {
             if (IsPalindrome(word))
+            {
                 return word;
+            }
+
+            var currentLongestPalindrome = string.Empty;
 
             for (int i = 0; i < word.Length; i++)
             {
@@ -15,19 +19,20 @@ namespace LongestPalindromicSubstring.Domain
 
                 for (int k = currentWord.Length; k >= 0; k--)
                 {
-                    if (IsPalindrome(currentWord.Substring(0, k)))
+                    string thisWord = currentWord.Substring(0, k);
+                    if (IsPalindrome(thisWord) && thisWord.Length > currentLongestPalindrome.Length)
                     {
-                        return currentWord.Substring(0, k);
+                        currentLongestPalindrome = thisWord;
                     }
                 }
             }
 
-            return string.Empty;
+            return currentLongestPalindrome;
         }
 
         public bool IsPalindrome(string word)
         {
-            if (string.IsNullOrEmpty(word) || word.Length == 1)
+            if (string.IsNullOrEmpty(word))
             {
                 return false;
             }
