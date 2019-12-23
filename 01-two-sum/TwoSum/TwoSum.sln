@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29201.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoSum.Domain", "TwoSum.Domain\TwoSum.Domain.csproj", "{799CC276-4C08-467A-876A-3D6A4F5263DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoSum.Test", "TwoSum.Test\TwoSum.Test.csproj", "{76141B68-BAB6-430C-8E7C-C8464C111E5C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{185AEA7C-9D31-4A04-95AA-893B62656630}"
+	ProjectSection(SolutionItems) = preProject
+		README.txt = README.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{799CC276-4C08-467A-876A-3D6A4F5263DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{799CC276-4C08-467A-876A-3D6A4F5263DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{799CC276-4C08-467A-876A-3D6A4F5263DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{799CC276-4C08-467A-876A-3D6A4F5263DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76141B68-BAB6-430C-8E7C-C8464C111E5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76141B68-BAB6-430C-8E7C-C8464C111E5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76141B68-BAB6-430C-8E7C-C8464C111E5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76141B68-BAB6-430C-8E7C-C8464C111E5C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {20EA6478-49D4-4A17-81B8-CE0C881A7DFA}
+	EndGlobalSection
+EndGlobal
