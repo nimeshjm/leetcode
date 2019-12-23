@@ -20,6 +20,9 @@ namespace Tests
             return sut.FindLongest(word);
         }
 
+        [TestCase(null, ExpectedResult = false)]
+        [TestCase("", ExpectedResult = false)]
+        [TestCase("c", ExpectedResult = false)]
         [TestCase("babad", ExpectedResult = false)]
         [TestCase("cbbd", ExpectedResult = false)]
         [TestCase("madam", ExpectedResult = true)]
